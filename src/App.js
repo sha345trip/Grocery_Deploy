@@ -51,10 +51,6 @@ const handleSubmit = (e) => {
       setNewItem={setNewItem}
       handleSubmit={handleSubmit}
       />
-      <SearchItem
-        search={search}
-        setSearch={setSearch}
-      />
       <Content
         items={items.filter(item => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
         handleCheck={handleCheck}
